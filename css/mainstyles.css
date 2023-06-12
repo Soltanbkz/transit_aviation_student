@@ -7,6 +7,9 @@
   width: 77%;
 }
 
+*{
+	font-family: 'Rubik', sans-serif !important;
+  }
 
 .leave-button{
   margin-top: 10%;
@@ -230,6 +233,10 @@ main .sidebar {
   transform: rotate(180deg);
 }
 
+.m-l{
+  margin-left: 10px;
+}
+
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
@@ -323,6 +330,10 @@ main .sidebar {
     transition: 1s;
   }
 
+  .card img{
+    width: 100% !important;
+  }
+
   .courses_sectors_images img{
     width: 230px;
   }
@@ -335,6 +346,11 @@ main .sidebar {
   .support-img{
     display: none;
   }
+
+  .card-img{
+    width: 100% !important;
+  }
+
   .ham {
       display: block;
   }
