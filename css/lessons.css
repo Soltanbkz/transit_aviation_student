@@ -597,6 +597,10 @@ main .sidebar {
         display: block;
     }
 
+    .support-img{
+        display: none;
+    }
+
     .side_bar_links {
         display: none;
     }

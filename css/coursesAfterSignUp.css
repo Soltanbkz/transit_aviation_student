@@ -527,6 +527,7 @@ input:-webkit-autofill:active {
     .sidebar a {
         font-size: 18px;
     }
+
     .training_sectors_images{
       display: grid;
     }
@@ -552,6 +553,14 @@ input:-webkit-autofill:active {
 
     .news_info{
       width: 90%;
+    }
+
+    .card{
+      width: 300px !important;
+    }
+
+    .training_sectors_images:last-child .card{
+       margin-bottom: 20px;
     }
   }
   
