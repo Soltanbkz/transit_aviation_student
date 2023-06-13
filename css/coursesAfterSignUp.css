@@ -277,7 +277,9 @@ input:-webkit-autofill:active {
 .training_sectors_images {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 5%;
+  gap: 20px;
 }
 
 /* training_sectors_images img style */
@@ -303,6 +305,10 @@ input:-webkit-autofill:active {
 .card h2{
   font-size: 20px;
   text-align: center;
+}
+
+.next-p, .prev-p{
+  display: none;
 }
 
 /* our courses */
@@ -513,13 +519,39 @@ input:-webkit-autofill:active {
     text-decoration: none;
   }
   
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 450px) {
     .sidebar {
         padding-top: 15px;
     }
   
     .sidebar a {
         font-size: 18px;
+    }
+    .training_sectors_images{
+      display: grid;
+    }
+
+    .news-buttons{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .next, .prev{
+      display: none;
+    }
+   
+    .next-p, .prev-p{
+      display: block;
+    }
+
+    .news{
+      display: block;
+      padding: 10px;
+    }
+
+    .news_info{
+      width: 90%;
     }
   }
   
@@ -534,7 +566,7 @@ input:-webkit-autofill:active {
     }
 
     .card{
-        width: 200px;
+        width: 250px;
     }
 
     .sidebar-logo{

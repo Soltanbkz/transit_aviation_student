@@ -1,615 +1,253 @@
-/* BODY */
-
 body {
-    background-color: #22549E;
-    margin: 0;
-    padding: 0;
-    color: #22549E;
+  margin: 0;
 }
 
-/* ----------------------------------------- */
-
-/* ALL PAGE */
-
-.all_page {
-    width: 100%;
-    display: flex;
+/* правая сторона сайта */
+.abusteku-deagulus img {
+  width: 100%;
 }
 
-.all_page .side_bar {
-    width: 20%;
-    margin: 20px 0px 20px 20px;
+*{
+font-family: 'Rubik', sans-serif !important;
+}
+#f{
+  text-decoration: none;
+  color: #ffffff; 
+}
+#s {
+  text-decoration: none;
+  color: #1F4989; 
+}
+/* правая сторона */
+
+.rigth-s {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  height:100vh;
+}
+/* задаем стиль формы */
+
+.form_container {
+  width: 400px;
+  height: fit-content;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 40px 20px 40px;
+  background-color: #ffffff;
+  border-radius: 11px;
+  font-family: "Inter", sans-serif;
 }
 
-.all_page .content {
-    background-color: white;
-    border-radius: 20px;
-    height: 100%;
-    width: 77%;
-    margin: 20px;
+/* задаем стиль контейнера с заголовком */
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
+/* задаем стиль заголовка */
 
-/* ----------------------------------------- */
-
-/* SIDE BAR */
-
-.side_bar {
-    text-align: center;
-
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #212121;
 }
 
-/* SIDE BAR - LOGO */
+/* задаем стиль родителю input */
 
-a {
-    color: white;
-    font-family: Roboto;
-    text-decoration: none;
+.input_container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.side_bar_logo_settings {
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
+/* задаем стиль иконке в input */
+
+.icon {
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 12px;
+  bottom: 9px;
 }
 
-.side_bar_logo_text {
-    margin-left: 5%;
-    font-size: 24px;
-    font-weight: medium;
+/* задаем стиль названию input */
+
+.input_label {
+  font-size: 0.75rem;
+  color: #8B8E98;
+  font-weight: 600;
 }
 
-/* SIDE BAR - LINKS */
+/* задаем стиль input */
 
-.side_bar_links {
-    margin-top: 30%;
+.input_field {
+  width: auto;
+  height: 40px;
+  padding-left:40px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
 }
 
-.side_bar_general {
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    background-color: white;
-    width: 110%;
-    border-radius: 20px 0 0 20px;
+/* задаем стиль input при focus */
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
 }
 
-.side_bar_general p a {
-    color: #FB6D3A;
+/* задаем стиль login кнопке */
+
+.sign-in_btn {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background: #1F4989;
+  border-radius: 40px;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.side_bar_img {
-    margin-left: 5%;
+/* задаем стиль ---or--- */
+
+.separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #8B8E98;
 }
 
-.side_bar_text {
-    margin-left: 5%;
-    font-size: 100%;
+.separator .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #e8e8e8;
 }
 
+/* задаем стиль родителю кнопкам или */
 
-.side_bar_courses {
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 2%;
+.or-sign-in-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.support-img {
-    margin-top: 50%;
-    align-items: center;
-    justify-content: center;
+/* задаем стиль кнопке login google */
+
+.sign-in_ggl {
+  width: 200px;
+  height: 40px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 40px;
+  outline: none;
+  color: #3949AB;
+  border: 1px solid #3949AB;
+  filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  cursor: pointer;
+  margin-right: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.support-img img {
-    width: 60%;
-    height: 100%;
+/* задаем стиль изображение в кнопке login google */
+
+.sign-in_ggl img {
+  width: 24px;
 }
 
-.side_bar_timeTable{
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 2%;
-  }
+/* задаем стиль кнопке login gitlab */
 
-  .side_bar_settings{
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-    margin-top: 2%;
-  }
-
-/* SEARCH INPUT */
-
-.content-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    margin-right: 5%;
+.sign-in_gitlab {
+  width: 200px;
+  height: 40px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 40px;
+  outline: none;
+  color: #3949AB;
+  border: 1px solid #3949AB;
+  filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  cursor: pointer;
+  margin-left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.form {
-    --input-text-color: #1b9bee;
-    --focus-input-bg-color: transparent;
-    --text-color: #949faa;
-    --width-of-input: 100%;
-    --inline-padding-of-input: 1.2em;
-    --gap: -0.5rem;
+/* задаем стиль изображение в кнопке login gitlab */
+
+.sign-in_gitlab img {
+  width: 19.2px;
+  height: 19.2px;
 }
 
-/* form style */
-.form {
-    font-size: 0.9rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    width: var(--width-of-input);
-    position: relative;
-    isolation: isolate;
-    width: 90%;
-    height: 37px;
-    margin-left: 5%;
-    background: #DCEAFF;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 20px;
+/* задаем стиль тексту нету аккаунта? */
+
+.note {
+  font-size: 0.75rem;
+  color: #8B8E98;
+  text-decoration: underline;
 }
 
-/* label styling */
-label {
-    width: 100%;
-    padding: 0.8em;
-    height: 40px;
-    padding-inline: var(--inline-padding-of-input);
-    display: flex;
-    align-items: center;
+/* задаем стиль кнопке log in Администрация*/
+
+.sign-in_admin{
+  width: 100%;
+  height: 40px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 40px;
+  outline: none;
+  color: #3949AB;
+  border: 1px solid #3949AB;
+  filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* styling search-icon */
-.form svg{
-    fill: var(--text-color);
-    left: var(--inline-padding-of-input);
+/* задаем стиль кнопке назад*/
+
+.sign-in_back{
+  width: 100px;
+  height: 40px;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 40px;
+  outline: none;
+  color: #3949AB;
+  border: 1px solid #3949AB;
+  filter: drop-shadow(0px 1px 0px #efefef) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
 }
-
-/* styling of close button */
-.close-btn {
-    border: none;
-    right: var(--inline-padding-of-input);
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    padding: 0.1em;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--active-color);
-    opacity: 0;
-    visibility: hidden;
-}
-
-/* styling of input */
-.input {
-    color: var(--input-text-color);
-    width: 100%;
-    margin-inline: min(2em, calc(var(--inline-padding-of-input) + var(--gap)));
-    background: none;
-    border: none;
-}
-
-.input:focus {
-    outline: none;
-}
-
-.input::placeholder {
-    color: var(--text-color)
-}
-
-/* input background change in focus */
-.input:focus~.fancy-bg {
-    border: 1px solid var(--active-color);
-    background: var(--focus-input-bg-color);
-}
-
-/* search icon color change in focus */
-.input:focus~.search {
-    fill: var(--active-color);
-}
-
-/* showing close button when typing */
-.input:valid~.close-btn {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
-    -webkit-transition-delay: 9999s;
-}
-
-/* notification-img-style */
-
-.notification-img {
-    margin-left: 1%;
-}
-
-/* users-img */
-
-.user-img {
-    margin-left: 2%;
-}
-
-/* Training sectors */
-
-
-/* training_sectors_h2 */
-.training_sectors_h2 {
-    margin-top: 3%;
-    margin-left: 5%;
-}
-
-/* training_sectors_images-style */
-.training_sectors_images {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-/* training_sectors_images img style */
-.training_sectors_images img {
-    margin-left: 10%;
-    width: 80%;
-    height: 100%;
-    background-size: cover;
-}
-
-/* our courses */
-
-@-webkit-keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
-    }
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-
-    100% {
-        -webkit-transform: translateX(calc(-250px * 7));
-        transform: translateX(calc(-250px * 7));
-    }
-}
-
-.slider {
-    background: pr;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 90%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 90%;
-    margin-bottom: 1%;
-}
-
-.slider::before,
-.slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 90%;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-}
-
-.slider .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
-}
-
-.slider .slide {
-    height: 70%;
-}
-
-/* courses_sectors_images */
-
-.courses_sectors_images{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 5%;
-}
-
-.courses_sectors_images img{
-    width: 90%;
-}
-  
-  .red{
-    color: #FF5757;
-  }
-  
-  .sidebar-logo {
-    margin-bottom: 30px;
-  }
-  
-  .sidebar-logo p {
-    margin-left: 30px;
-  }
-  
-  .sidebar {
-    height: 100%;
-    width: 85px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #22549E;
-    border-right: 1px solid #003c97;
-    transition: 0.5s;
-    overflow-x: hidden;
-    padding-top: 60px;
-    white-space: nowrap;
-    display: none;
-  }
-  
-  .sidebar a:last-child{
-    margin-top: 10px;
-  }
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-    display: block;
-  }
-  
-  .sidebar svg{
-    margin-bottom: -5px;
-  }
-  .orange {
-    color: #FB6D3A;
-  }
-  
-  main .sidebar {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    margin-left: 50px;
-  }
-  
-  
-  /* BURGER MENU */
-  
-  .burger-content {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: white;
-    transition: all 1s;
-    top: 0;
-  }
-  
-  .ham {
-    display: none;
-    position: fixed;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    transition: transform 400ms;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    right: 10px;
-    z-index: 99;
-  }
-  
-  .hamRotate.active {
-    transform: rotate(45deg);
-  }
-  
-  .hamRotate180.active {
-    transform: rotate(180deg);
-  }
-  
-  .line {
-    fill: none;
-    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke: #d0d0d0;
-    stroke-width: 5;
-    stroke-linecap: round;
-  }
-  
-  .ham1 .top {
-    stroke-dasharray: 40 139;
-  }
-  
-  .ham1 .bottom {
-    stroke-dasharray: 40 180;
-  }
-  
-  .ham1.active .top {
-    stroke-dashoffset: -98px;
-  }
-  
-  .ham1.active .bottom {
-    stroke-dashoffset: -138px;
-  }
-  
-  .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
-    margin-top: 20%;
-  }
-  
-  .burger-content-element{
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-  }
-  
-  .burger-content-element p a{
-    margin-left: 10px;
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  .burger-content-element-leave{
-    display: flex;
-    align-items: center;
-    margin-left: 10%;
-  }
-  
-  .burger-content-element-leave p a{
-    margin-left: 10px;
-    font-size: 18px;
-    color: #FF5757;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-  
-    .sidebar a {
-        font-size: 18px;
-    }
-  }
-  
-  @media screen and (min-width:601px) and (max-width:1100px) {
-    .content{
-      margin-left: 90px !important;
-      width: 100% !important;
-    }
-  
-    .sidebar-logo{
-      display: flex;
-      align-items: center;
-    }
-  
-    .sidebar_text{
-      margin-left: 30px;
-      margin-bottom: 30px;
-    }
-  
-    .side_bar{
-      display: none;
-    }
-  
-    .sidebar{
-      display: block;
-    }
-  
-    .sidebar-logo p {
-      font-size: 25px;
-    }
-  
-    .courses_sectors_images{
-      margin-left: 0;
-    }
-  
-    .courses_sectors_images img{
-      width: 100%;
-    }
-  }
-  
-  @media (max-width:600px) {
-    .ham {
-        display: block;
-    }
-    .side_bar_links{
-      display: none;
-    }
-  
-    .side_bar{
-      justify-content: space-between;
-    }
-  
-    .all_page{
-      display: grid;
-      height: 100%;
-    }
-  
-    .leave-button{
-      display: none;
-    }
-  
-    .all_page {
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-    }
-  
-    .all_page .side_bar {
-      position: fixed;
-      display: flex;
-      align-items: center;
-      width: 100%;
-      background-color: #1F4989;
-      height: 60px;
-      margin: 0;
-      padding-bottom: 1.6%;
-      padding-top: 1%;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px 2px 20px rgba(0, 0, 0, 0.08);
-    }
-  
-    .all_page .content {
-      margin-top: 80px;
-      background-color: white;
-      height: 100%;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .training_sectors_images {
-      display: block;
-    }
-  
-    .training_sectors_images img {
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-  
-    .training_sectors_h2 {
-      margin-left: 10%;
-    }
-  
-    .courses_sectors_images{
-      
-      display: grid;
-      justify-content: center;
-    }
-  
-    .courses_sectors_images img{
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-  }
