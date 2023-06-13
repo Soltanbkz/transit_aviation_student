@@ -489,6 +489,17 @@ main .sidebar {
   text-decoration: none;
 }
 
+.support-img {
+  margin-top: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-img img {
+  width: 60%;
+  height: 100%;
+}
+
 @media screen and (max-height: 450px) {
   .sidebar {
       padding-top: 15px;
