@@ -7,6 +7,9 @@ body {
   color: #22549E;
 }
 
+*{
+	font-family: 'Rubik', sans-serif !important;
+  }
 /* ----------------------------------------- */
 
 /* ALL PAGE */
@@ -20,6 +23,7 @@ body {
 .all_page .side_bar {
   width: 20%;
   margin: 20px 0px 20px 20px;
+  z-index: 99;
 }
 
 .all_page .content {
@@ -30,10 +34,6 @@ body {
   margin: 20px;
 }
 
-.leave-button{
-  margin-top: 10%;
-}
-
 .leave-button button{
   width: 120px;
   height: 35px;
@@ -41,6 +41,7 @@ body {
   background-color: red;
   border: none;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 /* ----------------------------------------- */
@@ -139,8 +140,26 @@ a {
 	align-items: center;
 	margin-top: 2%;
 }
+
 /* SEARCH INPUT */
 
+.courses_sectors_images{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-left: 3%;
+}
+
+
+.training_sectors_images img{
+  border-radius: 35px;
+}
+
+.training_sectors_images img:hover{
+  box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
+  transition: 500ms;
+}
 
 /* this is a recreation of twitter search in css */
 .content-header {
@@ -149,8 +168,6 @@ a {
   align-items: center;
   margin-top: 2%;
 }
-
-
 
 .form {
   --input-text-color: #1b9bee;
@@ -175,6 +192,17 @@ a {
   width: 90%;
   height: 37px;
   margin-left: 1%;
+}
+
+.support-img {
+  margin-top: 25%;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-img img {
+  width: 60%;
+  height: 100%;
 }
 
 /* a fancy bg for showing background and border when focus. */
@@ -335,16 +363,6 @@ input:-webkit-autofill:active {
   }
 }
 
-.courses_sectors_images{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3%;
-}
-
-.courses_sectors_images img{
-  width: 90%;
-}
 
 .red{
   color: #FF5757;
@@ -353,7 +371,9 @@ input:-webkit-autofill:active {
 .sidebar-logo {
   margin-bottom: 30px;
 }
-
+.sidebar img {
+	margin-bottom: -5px;
+  }
 .sidebar-logo p {
   margin-left: 30px;
 }
@@ -369,7 +389,7 @@ input:-webkit-autofill:active {
   border-right: 1px solid #003c97;
   transition: 0.5s;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 30px;
   white-space: nowrap;
   display: none;
 }
@@ -385,9 +405,10 @@ input:-webkit-autofill:active {
   display: block;
 }
 
-.sidebar svg{
+.sidebar img{
   margin-bottom: -5px;
 }
+
 .orange {
   color: #FB6D3A;
 }
@@ -409,6 +430,7 @@ main .sidebar {
   background-color: white;
   transition: all 1s;
   top: 0;
+  z-index: 99;
 }
 
 .ham {
@@ -422,7 +444,7 @@ main .sidebar {
   -ms-user-select: none;
   user-select: none;
   right: 10px;
-  z-index: 99;
+  z-index: 999;
 }
 
 .hamRotate.active {
@@ -441,20 +463,23 @@ main .sidebar {
   stroke-linecap: round;
 }
 
-.ham1 .top {
-  stroke-dasharray: 40 139;
+.ham6 .top {
+  stroke-dasharray: 40 172;
 }
-
-.ham1 .bottom {
-  stroke-dasharray: 40 180;
+.ham6 .middle {
+  stroke-dasharray: 40 111;
 }
-
-.ham1.active .top {
-  stroke-dashoffset: -98px;
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
 }
-
-.ham1.active .bottom {
-  stroke-dashoffset: -138px;
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
 }
 
 .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
@@ -465,6 +490,7 @@ main .sidebar {
   display: flex;
   align-items: center;
   margin-left: 10%;
+  margin-top: 8px;
 }
 
 .burger-content-element p a{
@@ -487,6 +513,23 @@ main .sidebar {
   text-decoration: none;
 }
 
+.courses_sectors_images img{
+  width: 90%;
+  position: relative;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+  z-index: 1;
+}
+
+.courses_sectors_images img:hover{
+	border-radius: 10em;
+}
+
+
 @media screen and (max-height: 450px) {
   .sidebar {
       padding-top: 15px;
@@ -502,6 +545,11 @@ main .sidebar {
     margin-left: 90px !important;
     width: 100% !important;
   }
+
+  
+  .support-img{
+    display: none;
+}
 
   .sidebar-logo{
     display: flex;
@@ -530,7 +578,7 @@ main .sidebar {
   }
 
   .courses_sectors_images img{
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -538,6 +586,12 @@ main .sidebar {
   .ham {
       display: block;
   }
+
+  
+  .support-img{
+    display: none;
+}
+
   .side_bar_links{
     display: none;
   }
@@ -592,8 +646,6 @@ main .sidebar {
     margin-bottom: 5%;
   }
 
-
-
   .training_sectors_h2 {
     margin-left: 10%;
   }
@@ -605,7 +657,7 @@ main .sidebar {
   }
 
   .courses_sectors_images img{
-    width: 60%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;

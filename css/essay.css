@@ -7,7 +7,9 @@ body {
 }
 
 /* ----------------------------------------- */
-
+*{
+	font-family: 'Rubik', sans-serif !important;
+  }
 /* ALL PAGE */
 
 .all_page {
@@ -29,6 +31,33 @@ body {
     padding: 20px;
 }
 
+.courses_sectors_images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .courses_sectors_images img{
+    width: 100%;
+    border-radius: 20px;
+    background-color: inherit;
+  }
+  
+  .training_sectors_images img{
+    border-radius: 35px;
+  }
+  
+  .training_sectors_images img:hover{
+    box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
+    transition: 500ms;
+  }
+  
+  .courses_sectors_images img:hover{
+    box-shadow: 3px 4px 5px 5px rgba(0,0,0,0.14);
+    transition: 500ms;
+  }
+  
 .quiz {
     padding: 30px;
     box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
@@ -495,22 +524,30 @@ input:-webkit-autofill:active {
     margin-left: 4%;
 }
 
-.leave-button {
-    margin-top: 10%;
-}
+.support-img {
+    margin-top: 25%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .support-img img {
+    width: 60%;
+    height: 100%;
+  }
 
-.leave-button button {
+.leave-button button{
     width: 120px;
     height: 35px;
     color: #FFFFFF;
     background-color: red;
     border: none;
     border-radius: 10px;
-}
-
+    margin-top: 10px;
+  }
 #button svg {
     margin-left: 10px;
 }
+
 
 .reply-textarea {
     resize: none;
@@ -629,21 +666,24 @@ main .sidebar {
     stroke-linecap: round;
 }
 
-.ham1 .top {
-    stroke-dasharray: 40 139;
-}
-
-.ham1 .bottom {
-    stroke-dasharray: 40 180;
-}
-
-.ham1.active .top {
-    stroke-dashoffset: -98px;
-}
-
-.ham1.active .bottom {
-    stroke-dashoffset: -138px;
-}
+.ham6 .top {
+    stroke-dasharray: 40 172;
+  }
+  .ham6 .middle {
+    stroke-dasharray: 40 111;
+  }
+  .ham6 .bottom {
+    stroke-dasharray: 40 172;
+  }
+  .ham6.active .top {
+    stroke-dashoffset: -132px;
+  }
+  .ham6.active .middle {
+    stroke-dashoffset: -71px;
+  }
+  .ham6.active .bottom {
+    stroke-dashoffset: -132px;
+  }
 
 .burger-content .burger-content-element:first-child,
 .burger-content-element-leave:last-child {
@@ -654,6 +694,7 @@ main .sidebar {
     display: flex;
     align-items: center;
     margin-left: 10%;
+    margin-top: 8px;
 }
 
 .burger-content-element p a {
@@ -690,6 +731,10 @@ main .sidebar {
     .content {
         margin-left: 90px !important;
         width: 100% !important;
+    }
+
+    .support-img{
+        display: none;
     }
 
     .all_page {
@@ -735,6 +780,11 @@ main .sidebar {
 @media (max-width:600px) {
     .ham {
         display: block;
+    }
+
+    
+    .support-img{
+        display: none;
     }
 
     .quiz{
