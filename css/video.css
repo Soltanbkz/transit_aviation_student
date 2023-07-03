@@ -137,13 +137,14 @@ a {
     margin-top: 25%;
     align-items: center;
     justify-content: center;
-}
-
-.support-img img {
+    margin-bottom: 10%;
+  }
+  
+  .support-img img {
     width: 60%;
     height: 100%;
-}
-
+  }
+  
 .side_bar_timeTable {
     display: flex;
     align-items: center;

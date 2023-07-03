@@ -58,17 +58,6 @@ body {
     margin: 20px;
 }
 
-.support-img {
-  margin-top: 25%;
-  align-items: center;
-  justify-content: center;
-}
-
-.support-img img {
-  width: 60%;
-  height: 100%;
-}
-
 /* ----------------------------------------- */
 
 .leave-button button{
@@ -142,14 +131,15 @@ a {
 }
 
 .support-img {
-    margin-top: 25%;
-    align-items: center;
-    justify-content: center;
+  margin-top: 25%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10%;
 }
 
 .support-img img {
-    width: 60%;
-    height: 100%;
+  width: 60%;
+  height: 100%;
 }
 
 .side_bar_timeTable{
@@ -420,7 +410,8 @@ h3 {
 }
 
 .end svg{
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .sections{

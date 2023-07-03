@@ -82,34 +82,25 @@ a {
 .side_bar_courses {
     display: flex;
     align-items: center;
+    margin-top: 2%;
 }
 
 .side_bar_general {
     display: flex;
     align-items: center;
-}
-
-.side_bar_student{
-	display: flex;
-	align-items: center;
-	margin-top: 2%;
+    margin-top: 2%;
 }
 
 .support-img {
   margin-top: 25%;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10%;
 }
 
 .support-img img {
   width: 60%;
   height: 100%;
-}
-
-.side_bar_answers{
-	display: flex;
-	align-items: center;
-	margin-top: 2%;
 }
 
 .leave-button button{
@@ -601,7 +592,6 @@ form h2{
         margin-right: auto;
     }
 
-    
     .support-img{
       display: none;
   }
