@@ -37,10 +37,6 @@ gap: 20px;
 margin-left: 3%;
 }
 
-.training_sectors_images img{
-border-radius: 35px;
-}
-
 .training_sectors_images img:hover{
 box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
 transition: 500ms;
@@ -117,7 +113,7 @@ a {
 }
 
 .support-img img {
-  width: 60%;
+  width: 70%;
   height: 100%;
 }
 
@@ -329,6 +325,7 @@ input:-webkit-autofill:active {
 .training_sectors_images img {
   width: 350px;
   background-size: cover;
+  border-radius: 10px 10px 0 0px;
 }
 
 .card {
@@ -751,3 +748,52 @@ input:-webkit-autofill:active {
     }
   
   }
+
+  .support-text{
+    color: #fFF;
+    text-align: left;
+  }
+  
+  .contacts-text{
+    opacity: 0.4000000059604645;
+    color: #fff;
+    margin-top: -10px;
+    text-align: left;
+  }
+  
+  .support-content button{
+    border-radius: 5px;
+    background: #FB6D3A;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    float: left;
+  }
+  
+  .support-content{
+    position: relative;
+    bottom: -100px;
+    left: 120px;
+  }
+  
+  .support-img{
+    margin-top: -20px;
+  }
+  
+  @media (max-width:1600px) {
+    .support-content{
+      left: 90px;
+      bottom: -100px;
+    }
+  }
+  
+  @media (max-width:1200px) {
+    .support-content{
+      left: 40px;
+      bottom: -110px;
+    }
+    .support-img img{
+      width: 80%;
+    }
+  }
+  

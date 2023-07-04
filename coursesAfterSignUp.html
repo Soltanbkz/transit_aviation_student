@@ -90,7 +90,13 @@
 
       <!-- support-img -->
       <div class="support-img">
-        <img src="img/support-img.png" alt="">
+        <div class="support-content">
+          <p class="support-text">Support 24/7</p>
+        <p class="contacts-text">Contacts us anytime</p>
+        <button>Start</button>
+        </div>
+        <img src="img/Frame 1000003201.png" alt="">
+  
       </div>
 
       <div class="leave-button">
@@ -171,7 +177,7 @@
 
         <div class="training_sectors_images">
           <div class="card">
-            <a title="module" href="module.html"><img class="card-img" src="img/2 2539373.png" /></a>
+            <a title="module" href="module.html"><img class="card-img" src="img/Mask Group.png" /></a>
             <h2>Visual Flying</h2>
           </div>
 
@@ -179,7 +185,7 @@
 
           <div class="card">
             <a title="module" href="module.html">
-              <img class="card-img" src="img/Group 82.png" /></a>
+              <img class="card-img" src="img/Mask Group2.png" /></a>
             <h2>Fly Learning</h2>
           </div>
         </div>
@@ -191,7 +197,7 @@
 
       <div class="news">
 
-        <img class="prev" src="img/next-button.svg" alt="">
+        <img onclick="prev()" class="prev" src="img/next-button.svg" alt="">
         <div class="news-buttons">
           <p class="prev-p">Предыдущий</p>
         <p class="next-p">Следующий</p>
@@ -206,7 +212,7 @@
           </div>
         </div>
 
-        <img class="next" src="img/next-button.svg" alt="">
+        <img onclick="next()" class="next" src="img/next-button.svg" alt="">
 
     </div>
       </div>
@@ -217,6 +223,40 @@
   </div>
   </div>
   <script src="js/side-bar.js"></script>
+  <script>
+    // Функция для переключения на предыдущую новость
+function prev() {
+  const dateElement = document.querySelector('.date p');
+  const newsElement = document.querySelector('.newsNone p');
+
+  // Получаем текущую дату
+  const currentDate = new Date(dateElement.textContent);
+
+  // Вычитаем один день от текущей даты
+  const prevDate = new Date(currentDate.getTime() - (24 * 60 * 60 * 1000));
+
+  // Обновляем дату и текст новости
+  dateElement.textContent = prevDate.toLocaleDateString();
+  newsElement.textContent = 'Текст предыдущей новости';
+}
+
+// Функция для переключения на следующую новость
+function next() {
+  const dateElement = document.querySelector('.date p');
+  const newsElement = document.querySelector('.newsNone p');
+
+  // Получаем текущую дату
+  const currentDate = new Date(dateElement.textContent);
+
+  // Прибавляем один день к текущей дате
+  const nextDate = new Date(currentDate.getTime() + (24 * 60 * 60 * 1000));
+
+  // Обновляем дату и текст новости
+  dateElement.textContent = nextDate.toLocaleDateString();
+  newsElement.textContent = 'Текст следующей новости';
+}
+
+  </script>
 </body>
 
 </html>
